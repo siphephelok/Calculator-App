@@ -15,6 +15,10 @@ body{
   justify-content: center;
   align-items: center;
   background: linear-gradient(45deg, #0a0a0a, #3a4452);
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  flex-direction: column;
 }
 
 .calculator{
@@ -23,6 +27,7 @@ body{
   border-radius: 16px;
   background-color: transparent;
   box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+  flex:1;
 }
 
 input{
@@ -35,6 +40,12 @@ input{
   font-size: 40px;
   text-align: right;
   cursor: pointer;
+  color: #ffffff;
+}
+
+.nonEditable{
+  pointer-events: none;
+  user-select: none;
 }
 input::placeholder{
   color: #ffffff;
@@ -58,4 +69,11 @@ button{
 
 .operator{
   color: #6dee0a;
+}
+
+footer {
+  background: transparent;
+  color: #fff; /* Customize the text color */
+  padding: 10px;
+  text-align: center;
 }
